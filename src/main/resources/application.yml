@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/authServiceDb?createTableIfNotExists=true
+    username: root
+    password: 3306
+  jpa:
+    hibernate:
+      ddl-auto: update
+  output:
+    ansi:
+      enabled: always 
